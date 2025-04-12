@@ -1,16 +1,34 @@
-# my
+# 📱 Hava Durumu Mobil Uygulaması
 
-A new Flutter project.
+Flutter ile geliştirilen bu uygulama, kullanıcının konumuna göre güncel hava durumu bilgisini gösterir. Kullanıcıdan konum izni alır, bulunduğu şehre göre verileri CollectAPI üzerinden çeker ve şık bir arayüzle listeler.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Özellikler
 
-A few resources to get you started if this is your first Flutter project:
+- 📍 **Konum Tespiti:** Cihazın mevcut konumunu tespit eder.
+- 🌤️ **Günlük Hava Durumu:** Günlük sıcaklık, gece-gündüz dereceleri ve hava durumu açıklamaları.
+- 🖼️ **Duruma Özel İkonlar:** API’den gelen ikon bağlantılarını gösterir.
+- 📋 **Liste Görünümü:** Şık tasarımlı kartlar halinde listeleme.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Kullanılan Teknolojiler
+
+- **Flutter**
+- **Dart**
+- **Dio** (HTTP istekleri için)
+- **Geolocator** (Konum bilgisi almak için)
+- **CollectAPI** (Hava durumu verisi kaynağı)
+
+---
+
+📌 Dikkat Edilmesi Gerekenler
+Uygulama çalışırken cihazın konum servisleri açık olmalıdır.
+
+Android cihazlar için AndroidManifest.xml içerisine aşağıdaki izinlerin eklenmiş olması gerekir:
+
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+collectapi.com üzerinden alınan API key .env gibi gizli tutulmalıdır. Bu örnekte doğrudan yazılmıştır (geliştirme amacıyla).
