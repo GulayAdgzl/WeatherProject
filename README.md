@@ -1,6 +1,7 @@
 # 📱 Hava Durumu Mobil Uygulaması
 
 Flutter ile geliştirilen bu uygulama, kullanıcının konumuna göre güncel hava durumu bilgisini gösterir. Kullanıcıdan konum izni alır, bulunduğu şehre göre verileri CollectAPI üzerinden çeker ve şık bir arayüzle listeler.
+![WhatsApp Image 2025-04-12 at 9 35 34 PM](https://github.com/user-attachments/assets/90b8082c-85c3-4f81-b88c-48cec8e43fdb)
 
 ---
 
