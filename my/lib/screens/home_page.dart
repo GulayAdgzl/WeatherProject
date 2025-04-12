@@ -31,9 +31,11 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Center(
-      child: Column(
-        children: [],
-      ),
-    ));
+            child: ListView.builder(
+      itemCount: _weather.length,
+      itemBuilder: (context, index) {
+        return Container();
+      },
+    )));
   }
 }
