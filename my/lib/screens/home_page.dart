@@ -12,15 +12,19 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List<WeatherModel> _weather = [];
 
-  void getWeather() async {
+  void _getWeather() async {
     try {
-      final weather = await WeatherService().getWeatherData();
-      setState(() {
-        _weather = weather;
-      });
+      _weather = await WeatherService().getWeatherData();
+      setState(() {});
     } catch (e) {
       print(e);
     }
+  }
+
+  @override
+  void initState() {
+    _getWeather();
+    super.initState();
   }
 
   @override
