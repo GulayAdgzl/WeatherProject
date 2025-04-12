@@ -34,7 +34,14 @@ class _HomePageState extends State<HomePage> {
             child: ListView.builder(
       itemCount: _weather.length,
       itemBuilder: (context, index) {
-        return Container();
+        return Container(
+          padding: const EdgeInsets.all(20),
+          margin: const EdgeInsets.all(15),
+          decoration: BoxDecoration(
+            color: Colors.blue,
+            borderRadius: BorderRadius.circular(20),
+          ),
+        );
       },
     )));
   }
