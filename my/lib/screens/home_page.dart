@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my/model/weather_model.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -8,6 +9,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  List<WeatherModel> _weather = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
