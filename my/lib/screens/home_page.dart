@@ -34,6 +34,7 @@ class _HomePageState extends State<HomePage> {
             child: ListView.builder(
       itemCount: _weather.length,
       itemBuilder: (context, index) {
+        final WeatherModel weather = _weather[index];
         return Container(
           padding: const EdgeInsets.all(20),
           margin: const EdgeInsets.all(15),
@@ -41,6 +42,24 @@ class _HomePageState extends State<HomePage> {
             color: Colors.blue,
             borderRadius: BorderRadius.circular(20),
           ),
+          child: Column(children: [
+            Image.network(weather.ikon,
+                width: 100,
+                height: 100,
+                fit: BoxFit.cover),
+                Padding(padding: EdgeInsets.only(top:15,bottom:25),
+                child: Text(
+                  "${weather.gun}\n ${weather.durum.toUpperCase()} ${weather.derece}°",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold),
+                  ),
+                ),
+
+                ])
+          ],)
         );
       },
     )));
