@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:my/model/weather_model.dart';
 
 class WeatherService {
   Future<String> _getLocation() async {
